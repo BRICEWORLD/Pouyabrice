@@ -1,1 +1,13 @@
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:16px;
+    object-fit:cover;
+}
 body{margin:0;background:#090909;color:#d4af37;font-family:Arial} .hero{height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(#111,#000)} h1{font-size:56px;letter-spacing:6px} section{padding:40px} li{margin:10px 0} footer{padding:30px;text-align:center;border-top:1px solid #d4af37;color:#fff}
