@@ -683,3 +683,13 @@ margin-bottom:20px;
 filter:drop-shadow(0 0 20px #d4af37);
 
 }
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    max-width: 100%;
+}
+
