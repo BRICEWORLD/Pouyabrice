@@ -1,25 +1,20 @@
-/* RESET */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-
 html{
     scroll-behavior:smooth;
 }
 
-
 body{
-
     background:#050505;
     color:white;
-    font-family:"Arial", sans-serif;
+    font-family:Arial,sans-serif;
     line-height:1.8;
-
 }
+
 
 
 /* HERO */
@@ -35,20 +30,14 @@ body{
 
     text-align:center;
 
-    position:relative;
-
-    overflow:hidden;
-
+    padding:30px;
 
     background:
-
     linear-gradient(
     rgba(0,0,0,.65),
     rgba(0,0,0,.95)
     ),
-
     url("Image/hero.jpg");
-
 
     background-size:cover;
     background-position:center;
@@ -57,34 +46,30 @@ body{
 
 
 
-/* لوگو */
-
+/* LOGO */
 
 .logo{
 
-    width:220px;
+    width:130px;
 
-    margin-bottom:35px;
-
+    margin-bottom:25px;
 
     filter:
     drop-shadow(0 0 25px #d4af37);
 
-
-    animation:logoMove 3s infinite alternate;
+    animation:floating 3s infinite alternate;
 
 }
 
 
-
-@keyframes logoMove{
+@keyframes floating{
 
 from{
 transform:translateY(0);
 }
 
 to{
-transform:translateY(-12px);
+transform:translateY(-10px);
 }
 
 }
@@ -92,30 +77,29 @@ transform:translateY(-12px);
 
 
 
-
-/* عنوان */
-
+/* TITLE */
 
 .hero h1{
-
 
     font-size:65px;
 
     letter-spacing:10px;
 
-
     color:#d4af37;
 
-
     text-shadow:
-
-    0 0 10px #d4af37,
-    0 0 30px #d4af37;
-
+    0 0 15px #d4af37;
 
 }
 
 
+.hero p{
+
+    color:#ddd;
+
+    font-size:20px;
+
+}
 
 
 
@@ -123,48 +107,46 @@ transform:translateY(-12px);
 
     color:#d4af37!important;
 
-    font-size:22px!important;
+    font-size:23px!important;
 
 }
 
 
 
-/* دکمه */
 
+
+/* BUTTON */
 
 .btn{
 
-    display:inline-block;
-
     margin-top:35px;
 
-    padding:14px 40px;
-
+    padding:15px 45px;
 
     border-radius:50px;
 
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#000;
+
+    font-weight:bold;
+
 
     background:
-
     linear-gradient(
     45deg,
-    #8b6508,
+    #a77b00,
     #d4af37,
     #ffe58a
     );
 
 
-    color:black;
-
-    font-weight:bold;
-
-    text-decoration:none;
-
-
     transition:.4s;
 
-
 }
+
 
 
 .btn:hover{
@@ -172,10 +154,9 @@ transform:translateY(-12px);
     transform:scale(1.08);
 
     box-shadow:
-    0 0 30px #d4af37;
+    0 0 40px #d4af37;
 
 }
-
 
 
 
@@ -185,10 +166,9 @@ transform:translateY(-12px);
 
 section{
 
-    padding:90px 8%;
+    padding:80px 8%;
 
 }
-
 
 
 h2{
@@ -199,8 +179,7 @@ h2{
 
     font-size:38px;
 
-    margin-bottom:45px;
-
+    margin-bottom:40px;
 
 }
 
@@ -210,9 +189,7 @@ h2{
 
 /* ABOUT */
 
-
 .about p{
-
 
     max-width:900px;
 
@@ -222,8 +199,7 @@ h2{
 
     color:#ddd;
 
-    font-size:19px;
-
+    font-size:18px;
 
 }
 
@@ -236,50 +212,46 @@ h2{
 
 .cards{
 
+    display:grid;
 
-display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
 
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
-
-gap:30px;
-
+    gap:30px;
 
 }
+
 
 
 
 .card{
 
 
-background:
+    background:
 
-linear-gradient(
-145deg,
-#151515,
-#070707
-);
-
-
-border:1px solid #333;
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(0,0,0,.8)
+    );
 
 
-padding:40px;
+    backdrop-filter:blur(10px);
 
 
-border-radius:25px;
+    border:1px solid #333;
 
 
-text-align:center;
+    padding:40px;
 
 
-transition:.5s;
+    border-radius:25px;
 
 
-box-shadow:
+    text-align:center;
 
-0 10px 40px rgba(0,0,0,.5);
+
+    transition:.5s;
 
 
 }
@@ -288,17 +260,14 @@ box-shadow:
 
 .card:hover{
 
+    transform:translateY(-15px);
 
-transform:translateY(-15px);
-
-
-border-color:#d4af37;
+    border-color:#d4af37;
 
 
-box-shadow:
+    box-shadow:
 
-0 0 35px #d4af37;
-
+    0 0 35px #d4af37;
 
 }
 
@@ -306,13 +275,9 @@ box-shadow:
 
 .card h3{
 
+    color:#d4af37;
 
-color:#d4af37;
-
-font-size:28px;
-
-margin-bottom:20px;
-
+    font-size:30px;
 
 }
 
@@ -320,38 +285,31 @@ margin-bottom:20px;
 
 .card a{
 
+    color:#d4af37;
 
-display:inline-block;
+    text-decoration:none;
 
-margin-top:20px;
+    display:block;
 
-
-color:#d4af37;
-
-text-decoration:none;
-
+    margin-top:20px;
 
 }
 
 
 
 
-
 /* GALLERY */
-
 
 .gallery-grid{
 
-
-display:grid;
-
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
+    display:grid;
 
 
-gap:25px;
+    grid-template-columns:
+    repeat(4,1fr);
 
+
+    gap:20px;
 
 }
 
@@ -359,22 +317,22 @@ gap:25px;
 
 .gallery img{
 
-
-width:100%;
-
-height:350px;
-
-object-fit:cover;
+    width:100%;
 
 
-border-radius:20px;
+    aspect-ratio:1/1;
 
 
-border:1px solid #333;
+    object-fit:cover;
 
 
-transition:.5s;
+    border-radius:20px;
 
+
+    border:1px solid #333;
+
+
+    transition:.4s;
 
 }
 
@@ -383,17 +341,14 @@ transition:.5s;
 
 .gallery img:hover{
 
-
-transform:
-scale(1.05);
+    transform:scale(1.05);
 
 
-border-color:#d4af37;
+    border-color:#d4af37;
 
 
-box-shadow:
-0 0 30px #d4af37;
-
+    box-shadow:
+    0 0 25px #d4af37;
 
 }
 
@@ -406,48 +361,26 @@ box-shadow:
 
 ul{
 
-list-style:none;
+    list-style:none;
 
-max-width:700px;
+    max-width:700px;
 
-margin:auto;
+    margin:auto;
 
 }
-
 
 
 li{
 
+    background:#111;
 
-background:#111;
+    padding:18px;
 
+    margin:15px;
 
-padding:18px;
+    border-radius:15px;
 
-
-margin:15px;
-
-
-border-radius:15px;
-
-
-border-right:4px solid #d4af37;
-
-
-transition:.3s;
-
-
-}
-
-
-
-li:hover{
-
-
-background:#191919;
-
-transform:translateX(-10px);
-
+    border-right:4px solid #d4af37;
 
 }
 
@@ -460,19 +393,11 @@ transform:translateX(-10px);
 
 footer{
 
+    text-align:center;
 
-padding:50px;
+    padding:50px;
 
-text-align:center;
-
-
-border-top:
-
-1px solid #d4af37;
-
-
-background:#020202;
-
+    border-top:1px solid #d4af37;
 
 }
 
@@ -480,16 +405,12 @@ background:#020202;
 
 footer a{
 
+    color:#d4af37;
 
-color:#d4af37;
-
-text-decoration:none;
-
-
-margin:10px;
-
+    text-decoration:none;
 
 }
+
 
 
 
@@ -502,47 +423,62 @@ margin:10px;
 
 .logo{
 
-width:150px;
+    width:110px;
 
 }
+
 
 
 .hero h1{
 
-font-size:35px;
+    font-size:35px;
 
-letter-spacing:4px;
-
+    letter-spacing:4px;
 
 }
+
 
 
 .subtitle{
 
-font-size:16px!important;
-
-}
-
-
-h2{
-
-font-size:30px;
+    font-size:16px!important;
 
 }
 
 
 section{
 
-padding:50px 20px;
+    padding:50px 20px;
+
+}
+
+
+
+/* گالری دو ستونه */
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
 
 }
 
 
 .gallery img{
 
-height:260px;
+    aspect-ratio:1/1;
 
 }
+
+
+
+h2{
+
+    font-size:30px;
+
+}
+
 
 
 }
