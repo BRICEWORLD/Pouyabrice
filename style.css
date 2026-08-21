@@ -1083,3 +1083,27 @@ nav{
     0 0 30px rgba(212,175,55,.4);
 
 }
+
+/* =========================
+   MOBILE SERVICES GRID FIX
+========================= */
+
+@media (max-width: 600px){
+
+    .services ul{
+        display:grid !important;
+        grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+        gap:12px !important;
+        width:100% !important;
+    }
+
+    .services li{
+        width:100% !important;
+        min-width:0 !important;
+        padding:20px 6px !important;
+        font-size:14px !important;
+        line-height:1.8;
+        border-radius:18px;
+    }
+
+}
