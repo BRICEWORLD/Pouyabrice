@@ -881,12 +881,24 @@ footer h2{
 
 
     .services ul{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
 
-        grid-template-columns:1fr;
+.services li{
+    padding:22px 8px;
+    font-size:15px;
+    border-radius:18px;
+}
 
-    }
+.service-icon{
+    margin-left:4px;
+}
 
-
+.services{
+    padding-top:40px;
+    padding-bottom:40px;
+}
 
     .gallery-grid{
 
