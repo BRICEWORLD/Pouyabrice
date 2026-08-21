@@ -413,3 +413,22 @@ footer{
 
 
 }
+
+
+.gallery-grid{
+    display:grid !important;
+    grid-template-columns:repeat(2, 1fr) !important;
+    gap:25px !important;
+    width:100%;
+}
+
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+}
