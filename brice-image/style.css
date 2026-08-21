@@ -417,19 +417,73 @@ footer{
 }
 
 
-/* MAIN WEBSITE LINK */
+/* MAIN WEBSITE LINK GLASS */
 
 .main-link{
 
+    max-width:900px;
+
+    margin:80px auto;
+
+    padding:50px 35px;
+
     text-align:center;
 
-    padding:80px 20px;
 
-    margin-top:60px;
+    background:
 
-    border-top:1px solid rgba(212,175,55,.25);
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.10),
+    rgba(255,255,255,.03)
+    );
+
+
+    backdrop-filter:blur(20px);
+
+
+    border:1px solid rgba(212,175,55,.45);
+
+
+    border-radius:35px;
+
+
+    box-shadow:
+
+    0 0 40px rgba(212,175,55,.15);
+
+
+    position:relative;
+
+    overflow:hidden;
 
 }
+
+
+
+/* خط نور بالای کارت */
+
+.main-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:15%;
+
+    width:70%;
+
+    height:1px;
+
+    background:#d4af37;
+
+    opacity:.7;
+
+}
+
+
 
 
 .main-link h2{
@@ -438,30 +492,104 @@ footer{
 
     font-size:45px;
 
+    color:#d4af37;
+
+    letter-spacing:3px;
+
 }
+
+
 
 
 .main-link p{
 
-    max-width:750px;
+    max-width:700px;
 
-    margin:0 auto 40px;
+    margin:0 auto 35px;
+
 
     line-height:2.2;
 
+
     color:#ddd;
+
 
     font-size:20px;
 
 }
 
 
+
+
 .main-link .btn{
 
     display:inline-block;
 
-    margin-top:20px;
 
     min-width:260px;
+
+
+    margin-top:10px;
+
+
+    border:1px solid rgba(255,255,255,.4);
+
+
+    box-shadow:
+
+    0 0 25px rgba(212,175,55,.35);
+
+}
+
+
+
+
+.main-link .btn:hover{
+
+    box-shadow:
+
+    0 0 45px rgba(212,175,55,.7);
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.main-link{
+
+    margin:50px 15px;
+
+    padding:35px 20px;
+
+}
+
+
+
+.main-link h2{
+
+    font-size:32px;
+
+}
+
+
+
+.main-link p{
+
+    font-size:16px;
+
+}
+
+
+
+.main-link .btn{
+
+    min-width:220px;
+
+}
+
 
 }
