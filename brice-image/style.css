@@ -1,1 +1,679 @@
+/* =========================
+   RESET
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+
+body{
+
+    background:#050505;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+.navbar{
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    z-index:1000;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(212,175,55,.3);
+
+}
+
+
+
+.logo-text{
+
+    color:#d4af37;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.navbar ul{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.navbar a:hover{
+
+    color:#d4af37;
+
+}
+
+
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero{
+
+    min-height:100vh;
+
+    width:100%;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    padding:150px 20px 50px;
+
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.95)
+    ),
+
+    url("Image/hero.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.brand-logo{
+
+    width:220px;
+
+    margin-bottom:35px;
+
+    filter:drop-shadow(0 0 30px #d4af37);
+
+}
+
+
+
+.hero h1{
+
+    color:#d4af37;
+
+    font-size:65px;
+
+    letter-spacing:8px;
+
+    text-shadow:
+
+    0 0 20px #d4af37;
+
+}
+
+
+
+.hero p{
+
+    margin-top:15px;
+
+    color:#ddd;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.btn{
+
+    margin-top:35px;
+
+    padding:15px 45px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:#000;
+
+    font-weight:bold;
+
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #a77b00,
+    #d4af37,
+    #ffe58a
+    );
+
+
+    transition:.4s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 40px #d4af37;
+
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+
+section{
+
+    width:100%;
+
+    padding:80px 8%;
+
+}
+
+
+
+h2{
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.section-desc{
+
+    text-align:center;
+
+    color:#aaa;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.category-card{
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(0,0,0,.85)
+    );
+
+
+    border:1px solid rgba(212,175,55,.3);
+
+
+    transition:.4s;
+
+}
+
+
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#d4af37;
+
+    box-shadow:
+
+    0 0 35px rgba(212,175,55,.5);
+
+}
+
+
+
+.category-card h3{
+
+    color:#d4af37;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.category-card p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+/* =========================
+   GALLERY
+========================= */
+
+
+.gallery-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    border:1px solid #333;
+
+
+    transition:.4s;
+
+}
+
+
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+
+    border-color:#d4af37;
+
+
+    box-shadow:
+
+    0 0 30px #d4af37;
+
+}
+
+
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+
+#about p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    border-top:1px solid rgba(212,175,55,.5);
+
+    background:#030303;
+
+}
+
+
+
+footer p{
+
+    color:#aaa;
+
+}
+
+
+
+.footer-logo{
+
+    width:150px;
+
+    margin:0 auto 25px;
+
+    filter:drop-shadow(0 0 25px #d4af37);
+
+}
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+    .navbar{
+
+        padding:15px 20px;
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+
+    .navbar ul{
+
+        gap:15px;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:45px;
+
+        letter-spacing:5px;
+
+    }
+
+
+
+    .brand-logo{
+
+        width:170px;
+
+    }
+
+
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .logo-text{
+
+        font-size:18px;
+
+    }
+
+
+
+    .navbar a{
+
+        font-size:13px;
+
+    }
+
+
+
+    .hero{
+
+        padding-top:170px;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:32px;
+
+        letter-spacing:3px;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+
+
+    .brand-logo{
+
+        width:130px;
+
+    }
+
+
+
+    section{
+
+        padding:50px 20px;
+
+    }
+
+
+
+    h2{
+
+        font-size:30px;
+
+    }
+
+
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+
+}
+
+
+
+/* =========================
+   FINAL FIX
+========================= */
+
+
+html,
+body{
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
