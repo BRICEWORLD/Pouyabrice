@@ -999,3 +999,75 @@ nav{
     margin:20px 0;
 
 }
+
+
+/* BRICE TEXT GLASS */
+
+
+.text-preview{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+
+
+.text-box{
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.12),
+    rgba(0,0,0,.5)
+    );
+
+
+    backdrop-filter:blur(15px);
+
+
+    border:1px solid rgba(212,175,55,.35);
+
+
+    border-radius:20px;
+
+
+    padding:20px;
+
+
+    color:#ddd;
+
+
+    font-size:16px;
+
+
+    line-height:2;
+
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,.15);
+
+
+    transition:.4s;
+
+}
+
+
+
+.text-box:hover{
+
+    transform:translateY(-5px);
+
+
+    border-color:#d4af37;
+
+
+    box-shadow:
+    0 0 30px rgba(212,175,55,.4);
+
+}
