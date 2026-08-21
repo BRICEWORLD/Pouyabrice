@@ -386,19 +386,21 @@ h2{
 
 
 /* =========================
-   GALLERY
+   PROFESSIONAL GALLERY
 ========================= */
 
 
 .gallery-grid{
-
-    width:100%;
 
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
     gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
 
 }
 
@@ -408,18 +410,17 @@ h2{
 
     width:100%;
 
-    aspect-ratio:1/1;
+    height:320px;
 
     object-fit:cover;
 
-
     border-radius:25px;
 
+    border:1px solid rgba(212,175,55,.25);
 
-    border:1px solid #333;
+    transition:.5s;
 
-
-    transition:.4s;
+    background:#111;
 
 }
 
@@ -427,20 +428,54 @@ h2{
 
 .gallery-grid img:hover{
 
-    transform:scale(1.05);
-
+    transform:translateY(-10px) scale(1.03);
 
     border-color:#d4af37;
 
-
     box-shadow:
 
-    0 0 30px #d4af37;
+    0 0 35px rgba(212,175,55,.5);
 
 }
 
 
 
+
+@media(max-width:900px){
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .gallery-grid img{
+
+        height:250px;
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .gallery-grid img{
+
+        height:300px;
+
+    }
+
+}
 
 
 /* =========================
